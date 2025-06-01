@@ -10,7 +10,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       <li>
         <strong>${item.subject}</strong><br>
         Attended: ${item.attended}/${item.total} (${item.percent}%)<br>
-        ➤ Need <b>${item.to65}</b> more for 65%, <b>${item.to75}</b> more for 75%
+       <b>${item.to65}</b> more for 65%, <b>${item.to75}</b> more for 75%
       </li>
     `).join('') + "</ul>";
   });
